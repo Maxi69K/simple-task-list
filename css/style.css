@@ -1,0 +1,108 @@
+/*   random images:      https://source.unsplash.com/random    */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  height: 100vh;
+  background: url(https://source.unsplash.com/_CGxNOLM1gQ) center/cover no-repeat;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+.container {
+  position: relative;
+  top: 30vh;
+  max-width: 300px;
+  margin: auto;
+}
+
+#enter {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 3px;
+  color: #04a1bf;
+  transition: all .5s ease;
+}
+
+#enter:hover {
+  background-color: #04a1bf;
+  color: #fff;
+}
+
+.listItems>ul {
+  margin-top: 20px;
+}
+
+.listItems>ul li {
+  padding: 10px 20px;
+  color: #111;
+  text-transform: capitalize;
+  font-weight: 500;
+  border: 2px solid #04a1bf;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  transition: all .5s ease;
+  letter-spacing: 2px;
+}
+
+.listItems>ul li:hover {
+  background-color: #264247;
+  color: #fff;
+
+}
+
+/* to be styled */
+li>button {
+  font-weight: normal;
+  background: none;
+  border: none;
+  outline: none;
+  float: right;
+  color: #264247;
+  font-weight: 900;
+}
+
+li:hover>button {
+  color: #fff;
+  cursor: pointer;
+}
+
+#userInput {
+  border-radius: 3px;
+  max-width: 70%;
+  padding: 5px;
+  border: none;
+  outline-color: #04a1bf;
+}
+
+.done {
+  color: #666;
+  text-decoration: line-through;
+}
+
+.delete {
+  transform: scale(0);
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+@media all and (min-width: 576px) {}
